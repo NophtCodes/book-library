@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <a href="">BookList</a>
+            <button>Log in</button>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <button class="btn addBtn">+ Add book</button>
+            <div class="books-panel">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright © 2023 <span><a href="https://github.com/NophtCodes"><span>NophtCodes</span> </a>
+
+            </span></p>
+    </footer>
+    <div class="modal">
+        <h3>Add a New Book</h3>
+        <form action="" class="addForm">
+            <input type="text" title="title" id="title" class="input" placeholder="Title" required maxlength="100">
+            <input type="text" title="author" id="author" class="input" placeholder="Author" required maxlength="100">
+            <input type="number" title="pages" id="pages" class="input" placeholder="Pages" required min="1">
+            <div class="isRead">
+                <label for="read">Have you read it?</label>
+                <input type="checkbox" id="read" class="input">
+            </div>
+
+            <button class="btn submit-btn" type="submit">Add</button>
+        </form>
+    </div>
+    <div class="overlay"></div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
